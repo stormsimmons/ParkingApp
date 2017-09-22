@@ -1,0 +1,67 @@
+tr:hover {background-color: white}
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+th {
+    height: 5px;
+    color: white;
+    text-align: left;
+}
+
+th, td {
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    text-align: left;
+    height: 20px;
+}
+
+.ellipsis{
+    max-width: 100px;    
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.nowrap{
+    white-space: nowrap;
+}
+
+.highlight{
+    background-color:#00aed9 ;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.column-split{
+    -webkit-column-count: 2;
+    column-count: 2;
+    margin-left: 10%;
+    margin-bottom: 2%;
+}
+
+label{
+    font-weight: bold;
+    padding-left: 20px;
+    font-size: 120%;
+}
+
+@media screen and (max-width: 500px){ 
+    td, th{
+         padding: 5px 1px 5px 5px ; 
+        font-size: 10px;
+    }
+
+    .column-split{
+    -webkit-column-count: 2;
+    column-count: 2;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    margin-right: 10%;
+    }
+} 

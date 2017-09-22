@@ -1,0 +1,23 @@
+[
+    {"parkingBayId":50, "polygonCoords":"1276,154 1329,101 1298,72 1247,130" ,"textCoords":{"x":1281, "y":107},"rectCoords":{"x":1002, "y":141}},
+    {"parkingBayId":51, "polygonCoords":"1240,121 1288,65 1259,41 1210,98"    ,"textCoords":{"x":1240, "y":76},"rectCoords":{"x":996, "y":102}},
+    {"parkingBayId":52, "polygonCoords":"1199,92 1244,32 1213,9 1169,68"     ,"textCoords":{"x":1198, "y":43} ,"rectCoords":{"x":939, "y":73}},
+    {"parkingBayId":53, "polygonCoords":"1003,318 1052,261 1022,237 973,293" ,"textCoords":{"x":1005, "y":270},"rectCoords":{"x":785, "y":325}},
+    {"parkingBayId":54, "polygonCoords":"1047,351 1094,293 1064,271 1017,326","textCoords":{"x":1048, "y":304},"rectCoords":{"x":821, "y":343}},
+    {"parkingBayId":55, "polygonCoords":"1082,382 1131,326 1100,301 1053,357","textCoords":{"x":1083, "y":337},"rectCoords":{"x":834, "y":359}},
+    {"parkingBayId":56, "polygonCoords":"1133,426 1184,372 1156,348 1104,400","textCoords":{"x":1135, "y":381},"rectCoords":{"x":871, "y":403}},
+    {"parkingBayId":57, "polygonCoords":"1176,458 1227,404 1200,380 1148,432","textCoords":{"x":1179, "y":415},"rectCoords":{"x":930, "y":451}},
+    {"parkingBayId":58, "polygonCoords":"1215,493 1264,442 1236,416 1186,469","textCoords":{"x":1217, "y":448},"rectCoords":{"x":968, "y":494}},
+    {"parkingBayId":59, "polygonCoords":"1249,526 1300,473 1271,449 1221,501","textCoords":{"x":1252, "y":483},"rectCoords":{"x":1006, "y":518}},
+    {"parkingBayId":60, "polygonCoords":"1285,565 1336,510 1307,484 1256,537" ,"textCoords":{"x":1285, "y":520},"rectCoords":{"x":1038, "y":560}},
+    {"parkingBayId":61, "polygonCoords":"1017,768 996,736 932,777 953,808"    ,"textCoords":{"x":968, "y":765},"rectCoords":{"x":717, "y":643}},
+    {"parkingBayId":66, "polygonCoords":"1157,691 1223,658 1205,625 1139,659","textCoords":{"x":1176, "y":652},"rectCoords":{"x":915, "y":669}},
+    {"parkingBayId":67, "polygonCoords":"1133,649 1202,617 1183,582 1117,616","textCoords":{"x":1151, "y":611},"rectCoords":{"x":806, "y":632}},
+    {"parkingBayId":68, "polygonCoords":"1115,603 1179,566 1158,534 1095,574","textCoords":{"x":1127, "y":565},"rectCoords":{"x":862, "y":581}},
+    {"parkingBayId":73, "polygonCoords":"968,430 1020,378 993,351 941,403"    ,"textCoords":{"x":975, "y":386},"rectCoords":{"x":697, "y":413}},
+    {"parkingBayId":74, "polygonCoords":"933,401 981,345 952,323 904,378"    ,"textCoords":{"x":937, "y":355},"rectCoords":{"x":651, "y":384}},
+    {"parkingBayId":85, "polygonCoords":"691,308 655,242 621,261 657,326"    ,"textCoords":{"x":649, "y":279},"rectCoords":{"x":675, "y":301}},
+    {"parkingBayId":86, "polygonCoords":"644,330 610,261 575,279 611,346"    ,"textCoords":{"x":601, "y":296},"rectCoords":{"x":645, "y":323}},
+    {"parkingBayId":87, "polygonCoords":"597,351 561,283 526,303 563,369"    ,"textCoords":{"x":553, "y":319},"rectCoords":{"x":564, "y":358}},
+    {"parkingBayId":95, "polygonCoords":"132,649 189,601 164,572 107,622"    ,"textCoords":{"x":143, "y":603},"rectCoords":{"x":168, "y":618}}
+]	

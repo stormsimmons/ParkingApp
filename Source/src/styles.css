@@ -1,0 +1,26 @@
+.main{
+    width: 90%;
+    margin: auto;
+    background: white;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 2px 5px 0 rgba(0,0,0,0.19);    
+}
+
+.main-background{
+    background: #efeee9;
+    font-family: 'Roboto', sans-serif;
+}
+
+button{
+    font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (max-width: 500px) /* Mobile */ {
+    .main{
+        font-size: 10px;
+    }
+
+    h1{
+        font-size: 14px;
+        font-weight: bold;
+    }
+}

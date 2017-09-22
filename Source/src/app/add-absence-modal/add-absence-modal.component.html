@@ -1,0 +1,26 @@
+<span  class="wrapper">
+  <button  (click)="open(content)" *ngIf="employee" >Add Absence</button>
+</span>
+
+<div class="container">
+   <ng-template #content let-c="close"  id="template"> 
+    <div class="form-group"  >
+    <div class="modal-header">
+      <h4 class="modal-title">Add Absence</h4>
+    </div>
+
+    <form class="form-group" #formData="ngForm" (ngSubmit)="submit(formData)" method="POST" id="form">
+      <div class="modal-body">
+        <p>Please enter leave dates:</p>
+        <label>StartDate:</label> <input type="Date" class="form-control" name="start" ngModel><br> 
+        <label>EndDate:</label><input type="Date" class="form-control" name="end" ngModel>
+      </div>
+      <div class="modal-footer">
+        <button class="submit-button" type="submit" class="btn btn-secondary" style="left:75px; top: 100%">Submit</button>
+        <button class="cancel-button" type="button" class="btn btn-secondary" (click)="close()" style="top: 100%">Close</button>
+      </div>
+    </form>
+    </div>
+   </ng-template> 
+
+</div>

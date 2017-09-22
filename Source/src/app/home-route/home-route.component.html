@@ -1,0 +1,25 @@
+<label>Welcome: {{firstName}} {{lastName}} </label>
+
+<div class="button-container">
+  <div class="row">
+    <div class="col-md-2">
+      <app-add-absence-modal [employeeDtos]="employeeDtos" class="absence-modal"></app-add-absence-modal>
+    </div>
+    <div class="col-md-2">
+      <app-logout class="logout"></app-logout>
+    </div>
+  </div>
+</div>
+
+<div class="title-container" style="padding: 0% 0% 0.5% 0%; font-weight: bold">
+  <h1>
+    <img src={{emiLogo}} width="20%" style="padding-right:2%; padding-left: 1%" />
+    <div>{{title}}</div>
+  </h1>
+</div>
+
+<app-search-date-criteria (periodChanged)="searchPeriodChanged($event)"></app-search-date-criteria>
+<app-web-map [absenceDtos]="absenceDtos" [employeeDtos]="employeeDtos"></app-web-map>
+<div style="clear: both; margin: 2.5%; padding-bottom: 1%">
+  <app-absence-view-list [absenceDtos]="absenceDtos" [selectedSearchPeriod]="selectedSearchPeriod" (absenceDtosChange)="absenceDtoUpdated($event)"></app-absence-view-list>
+</div>

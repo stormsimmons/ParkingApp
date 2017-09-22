@@ -1,0 +1,27 @@
+  <div  id="webMap">
+    <svg width="100%" viewBox="0 0 1402 912" >
+      <image   attr.xlink:href={{webMapImage}} width="100%"/>
+
+      <g  *ngFor="let bay of webMapModel.parkingBays" (mouseenter)="mouseOver($event,bay)" (mouseleave)="mouseOut($event)" id="{{bay.id}}" [class.highlight]="bay==webMapModel.selectedParkingBay"  [class.available]="bay.isAvailable==true" class="test"  >
+              
+          <svg:polygon [attr.points]="bay.pathCoords" />
+          <text style="font-style:calibri" id="text" text-anchor="middle" [attr.x]="bay.labelCoords.x" [attr.y]="bay.labelCoords.y" transform="translate(+7, +10)"  >{{bay.id}}</text>
+    
+      </g>    
+        
+      <g id='hoverGroup' (mouseleave)="mouseOut($event)"  *ngIf="webMapModel.selectedParkingBay!=undefined && webMapModel.selectedParkingBay!=null " [attr.transform]="'translate('+webMapModel.selectedParkingBay.boxCoords.x+','+webMapModel.selectedParkingBay.boxCoords.y+')'">
+        <rect id="hoverBoxRect"  x="0" y="0"  width="330" height="120" fill="white"  stroke="#00aed9"  stroke-width="2"  ></rect>
+        <text class="hoverBoxtext" x="20" y="37" font-family="Verdana" font-size="25" strong="true" >{{webMapModel.selectedParkingBay.id}}</text>
+        <text class="hoverBoxtext" x="70" y="32" font-family="Verdana" font-size="20" > {{webMapModel.selectedParkingBay.ownerName}}</text>
+        <text  x="75"  y="75" font-family="Verdana" font-size="15" fill="gray" *ngIf="webMapModel.selectedParkingBay.isAvailable==true" >NEXT AVAILABLE ON </text>
+        <text x="75"  y="75" font-family="Verdana" font-size="15" fill="gray" *ngIf="webMapModel.selectedParkingBay.isAvailable==false">NO UPCOMING AVAILABLITY </text>
+        <text class="hoverBoxtext" x="75" y="107" font-family="Verdana" font-size="18" > {{webMapModel.selectedParkingBay.availableDate | date:'dd MMMM yyyy'}}</text>
+        
+    </g> 
+
+    </svg>
+  </div>
+
+  <span id="bayOwnerlist">
+    <app-bay-owners-list [webMapModel] = "webMapModel" ></app-bay-owners-list>
+  </span>

@@ -1,0 +1,17 @@
+<label style="margin-left: 5%; font-size:25px">Parking Bay List</label>
+<div class="column-split">
+  <table class="bay-owners-list-table">
+    <tbody>
+      <tr *ngFor='let bay of webMapModel.parkingBays'>
+        <td class="nowrap" id="id" [class.highlight]="bay == webMapModel.selectedParkingBay" (mouseover)="mouseOver(bay)" (mouseout)="mouseOut()"
+          style="font-weight: bold;">{{bay.id}}</td>
+        <td class="ellipsis" [class.highlight]="bay == webMapModel.selectedParkingBay" (mouseover)="mouseOver(bay)" (mouseout)="mouseOut()">{{bay.ownerName}}</td>
+      </tr>
+      <tr>
+        <td style="color:white; opacity: 0">
+          easteregg!
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

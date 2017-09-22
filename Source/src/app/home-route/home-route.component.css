@@ -1,0 +1,60 @@
+label{
+    margin-left: 2%;
+    margin-top: 0.5%;
+    font-weight: bold;
+    color: #00aed9;
+}
+
+img{
+    float: left;
+    /* width: 30%; */
+    margin-left: 2%;
+}
+
+text{
+    position: absolute;
+}
+
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.row{
+    position: relative;
+    left: 93%;
+}
+
+.button-container{
+    position: absolute;
+    /* float: right; */
+}
+
+
+@media screen and (max-width: 500px) /* Mobile */ {
+  .search-date-box{
+      position: absolute;
+  }
+
+  img{
+      width: 35%;
+      margin-left: 2.5%
+  }
+}
+
+/* dynamic window changes */
+ @media (max-width:1700px){
+    .row{
+      left: 80%;
+    }   
+} 
+ @media (max-width:1600px){
+    .row{
+      left: 60%;
+    }   
+} 
+ @media (max-width:880px){
+    .row{
+      left: 50%;
+    }   
+} 

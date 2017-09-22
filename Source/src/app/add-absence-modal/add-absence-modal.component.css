@@ -1,0 +1,40 @@
+/* .wrapper {
+    float: right
+} */
+
+ button {
+    height: 40px;
+    width: 140px;
+    right: 10%;
+    bottom: 93%;
+    background-color: white; 
+    font-style:'Roboto';
+    border:1px solid #00aed9;
+    color: #00aed9;
+    padding: 2px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2), 0 2px 5px 0 rgba(0,0,0,0.19);
+} 
+
+button:hover{
+    background-color: #00aed9;
+    color: white;
+    border:2px solid #00aed9;
+    transition-duration: 0.4s
+}
+
+@media screen and (max-width: 500px) /* Mobile */ {
+    button{
+        font-size: 10px;
+        height: 25px;
+        width: 100px;
+        position: absolute;
+        margin-bottom: 2.5%;
+    }
+
+}
+

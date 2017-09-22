@@ -1,0 +1,41 @@
+<table class="absence-view-header" border="0" width="100%" id="table-header" >
+<tr>
+  <td id="available-bays-range" style="font-weight: bold">Available Bays: {{dateRange}}</td>
+</tr>
+</table>
+
+<div> 
+  <div class="table-respons">
+      <table class="table">
+        <thead> 
+          <tr style="font-weight: normal">
+            <th>Bay #</th>
+            <th>Date Available</th>
+            <th>Bay Owner</th> 
+            <th>Reserved By</th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor='let absenceView of absenceViewModel.absenceViews'> 
+            <td>{{absenceView.ParkingBaynumber.BayNumber}}</td>
+            <td>{{absenceView.Absence.StartDate | date:'dd MMMM yyyy'}} - {{absenceView.Absence.EndDate | date:'dd MMMM yyyy'}}</td>
+            <td>{{absenceView.BayOwner}}</td>
+            <td *ngIf="absenceView.Absence.ReservedBy" style="color:#ff6a13">{{absenceView.Absence.ReservedBy.FirstName}} {{absenceView.Absence.ReservedBy.LastName}}</td>
+            <td *ngIf="absenceView.Absence.ReservedBy == null" style="color: #00aed9">Available</td>
+            <td>
+              <button class="reserve-button" (click)="ReserveAbsence(absenceView)" *ngIf="absenceView.Absence.ReservedBy == null && (firstName + ' ' + lastName) != absenceView.BayOwner">Reserve</button>
+              <button class="disabled-reserve-button" *ngIf="absenceView.Absence.ReservedBy != null || (firstName + ' ' + lastName) == absenceView.BayOwner" disabled="true">Reserve</button>
+            </td>
+            <td>
+              <button class="cancel-button" 
+                      (click)="CancelReservedParkingbay(absenceView)" 
+                      *ngIf="absenceView.Absence.ReservedBy != null   && absenceView.Absence.ReservedBy.FirstName == firstName && absenceView.Absence.ReservedBy.LastName == lastName">Cancel</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+</div>
+

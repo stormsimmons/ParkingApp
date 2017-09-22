@@ -1,0 +1,97 @@
+[
+  {
+    "Id": 1,
+    "FirstName": "testFirstName",
+    "LastName": "testLastName",
+    "Email": "rick.james@euromonitor.com",
+    "AbsenceList": [
+      {
+        "StartDate": "/Date(1501797600000-0000)/",
+        "EndDate": "/Date(1502834400000-0000)/",
+        "ReservedBy": {
+          "Id": 23,
+          "FirstName": "DJ",
+          "LastName": "Coetzee"
+        }
+      },
+      {
+        "StartDate": "/Date(1503180000000-0000)/",
+        "EndDate": "/Date(1504130400000-0000)/",
+        "ReservedBy": {
+          "Id": 23,
+          "FirstName": "DJ",
+          "LastName": "Coetzee"
+        }
+      },
+      {
+        "StartDate": "/Date(1502575200000-0000)/",
+        "EndDate": "/Date(1505253600000-0000)/",
+        "ReservedBy": {
+          "Id": 11,
+          "FirstName": "Kaanita",
+          "LastName": "ColeMan"
+        }
+      }
+    ],
+    "ParkingBay": {
+      "BayNumber": 101
+    }
+  },
+  {
+    "Id": 2,
+    "FirstName": "Storm",
+    "LastName": "Simmons",
+    "Email": "storm.simmons@euromonitor.com",
+    "AbsenceList": [
+      {
+        "StartDate": "/Date(1500847200000-0000)/",
+        "EndDate": "/Date(1503784800000-0000)/"
+      },
+      {
+        "StartDate": "/Date(1502316000000-0000)/",
+        "EndDate": "/Date(1504130400000-0000)/"
+      }
+    ],
+    "ParkingBay": {
+      "BayNumber": 102
+    }
+  },
+  {
+    "Id": 3,
+    "FirstName": "Daniel",
+    "LastName": "Coetzee",
+    "Email": "daniel.coetzee@euromonitor.com",
+    "AbsenceList": [
+      {
+        "StartDate": "/Date(1500847200000-0000)/",
+        "EndDate": "/Date(1503784800000-0000)/"
+      },
+      {
+        "StartDate": "/Date(1502316000000-0000)/",
+        "EndDate": "/Date(1504130400000-0000)/"
+      }
+    ],
+    "ParkingBay": {
+      "BayNumber": 103
+    }
+  },
+  {
+    "Id": 4,
+    "FirstName": "Sbu",
+    "LastName": "Zamani",
+    "Email": "sbu.zamani@euromonitor.com",
+    "AbsenceList": [
+      {
+        "StartDate": "/Date(1501624800000-0000)/",
+        "EndDate": "/Date(1502575200000-0000)/"
+      },
+      {
+        "StartDate": "/Date(1504994400000-0000)/",
+        "EndDate": "/Date(1506549600000-0000)/"
+      }
+    ],
+    "ParkingBay": {
+      "BayNumber": 104
+    }
+  }
+]

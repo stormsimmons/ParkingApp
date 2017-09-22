@@ -1,0 +1,22 @@
+img{
+    float: left;
+    /* width: 30%; */
+    margin-left: 2%;
+}
+
+text{
+    position: absolute;
+}
+
+@media screen and (max-width: 500px) /* Mobile */ {
+  .search-date-box{
+      position: absolute;
+  }
+
+  img{
+      width: 35%;
+      margin-left: 2.5%
+  }
+}
+
+
